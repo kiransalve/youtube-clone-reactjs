@@ -13,7 +13,6 @@
   justify-content: center;
   text-decoration: none;
   color: #5e5e5e;
-  margin-bottom: 20px;
   width: fit-content;
   flex-wrap: wrap;
 }
@@ -24,4 +23,19 @@
 .sidebar_icon {
   width: 20px;
   margin-right: 20px;
+}
+
+/* mobile sidebar */
+/* when click on menu sidebar width will be 5% from 15%*/
+.small-sidebar {
+  width: 5%;
+}
+/* to hide titles and only display icons */
+.small-sidebar p {
+  display: none;
+}
+/* margin after click menu */
+.small-sidebar a {
+  margin-bottom: 28px;
+  margin-top: 15px;
 }
