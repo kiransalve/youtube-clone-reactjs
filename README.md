@@ -1,8 +1,15 @@
-# React + Vite
+Project created with vite@react
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Features :
+Header and Sidebar components created
 
-Currently, two official plugins are available:
+React Routing setup for homepage
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+File Structure :
+
+![image](https://github.com/kiransalve/youtube-clone-reactjs/assets/90862340/9b1124b2-35bc-4287-b7db-2e583b7e7d78)
+
+
+Project Screenshot :
+
+![image](https://github.com/kiransalve/youtube-clone-reactjs/assets/90862340/3c03dc94-cf7f-4e3d-aed6-26de9af43222)
