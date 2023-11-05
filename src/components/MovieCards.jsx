@@ -12,23 +12,28 @@ const MovieCards = () => {
   if (error) {
     return <div>Error: {error}</div>;
   }
-  const videoList = videos?.contents?.map(
-    (video) => video.video?.publishedTimeText
-  );
+  const videoList = videos?.contents?.map((video) => video.video?.videoId);
   const dummyThumb = "https://picsum.photos/350/200";
   const dummyAvatar = "https://picsum.photos/20/20";
-  const dummyTitle = "Best Tutorial for React Js";
+  const dummyTitle = "Make Youtube clone in React Js";
   const dummyChannelName = "Kiran Salve";
-  console.log(videoList);
+  const dummyVideoId = "WXPfcRnz9Z8";
   return (
     <>
       {videos?.contents?.map((video) => (
-        <div className="vid-list" key={video.video?.title}>
-          <Link>
-            <img
-              src={video.video?.thumbnails[0].url || dummyThumb}
-              className="thumbnail"
-            />
+        <div className="vid-list">
+          <Link
+            to={`/moviestream/${video?.video?.videoId}`}
+            key={video?.video?.videoId}
+            onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+          >
+            <div className="small-thumb">
+              <img
+                src={video.video?.thumbnails[0].url || dummyThumb}
+                className="thumbnail"
+              />
+            </div>
+
             <div className="vid_div">
               <img
                 src={video.video?.author?.avatar[0]?.url || dummyAvatar}

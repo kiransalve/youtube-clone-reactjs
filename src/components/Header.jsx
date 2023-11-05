@@ -1,19 +1,21 @@
 import React, { useEffect, useState } from "react";
+import "../css/Header.css";
 import { AiOutlineMenu, AiOutlineUser } from "react-icons/ai";
 import { FiLogOut } from "react-icons/fi";
-import "../css/Header.css";
 import { BsYoutube } from "react-icons/bs";
 import { AiOutlineSearch } from "react-icons/ai";
 import { useDispatch } from "react-redux";
 import { toggleSidebar } from "../store/sidebarReducer";
 import { fetchVideos } from "../store/youtubeReducer";
 import { api_key } from "../constants";
+import { useNavigate } from "react-router-dom";
 
 const Header = () => {
   const [openSidebar, setOpenSidebar] = useState(true);
-  const [searchValue, setSearchValue] = useState("trending");
-
+  const [searchValue, setSearchValue] = useState("");
   const dispatch = useDispatch();
+  const navigate = useNavigate();
+
   const toggleSidebarMenu = () => {
     // 2. this function makes openSidebar value to its opposite value of current openSidebar value
     // like if openSidebar current value is true then (!openSidebar) makes its value to false after clicked
@@ -24,17 +26,13 @@ const Header = () => {
     // that function is declare in src/store/sidebarReducer.js named as toggleSidebar
     dispatch(toggleSidebar(openSidebar));
   };
-
   const handleclick = () => {
-    // video fetching 3. we dispatch the fetchVideos function to yotubeReducer.jsx
-    // with user input value (searchValue), method, url, params, headers as searchParams
-    // go to youtubeReducer.jsx
     dispatch(
       fetchVideos({
         method: "GET",
         url: "https://youtube-v38.p.rapidapi.com/search/",
         params: {
-          q: searchValue,
+          q: searchValue || "trending",
           hl: "en",
           gl: "US",
         },
@@ -48,6 +46,7 @@ const Header = () => {
 
   useEffect(() => {
     handleclick();
+    navigate("/");
   }, []);
 
   return (
@@ -61,7 +60,7 @@ const Header = () => {
             onClick={toggleSidebarMenu}
           />
           {/* 1. when user click on menu icon toggleSidebarMenu function called */}
-          <BsYoutube className="logo_icon icon" />
+          <BsYoutube className="logo_icon icon" onClick={() => navigate("/")} />
         </div>
         <div className="nav_middle">
           <div className="search_box flex-div">
