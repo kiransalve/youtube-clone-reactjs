@@ -34,3 +34,16 @@ nav {
 .search_box input::placeholder {
   font-size: 15px;
 }
+
+/* Mobile device media queries */
+@media (max-width: 900px) {
+  .menu_icon {
+    display: none;
+  }
+  .search_box input {
+    width: 100px;
+  }
+  .logo_icon {
+    font-size: 28px;
+  }
+}
