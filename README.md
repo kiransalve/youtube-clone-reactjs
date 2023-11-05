@@ -1,8 +1,22 @@
-# React + Vite
+Get details of selected video from Rapid API based on videoId
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+We have send request to Rapid API - Youtube V3 using axios
 
-Currently, two official plugins are available:
+Select Video
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
+Playing video in separate page
+
+
+![image](https://github.com/kiransalve/youtube-clone-reactjs/assets/90862340/ec65e801-8720-43c2-9675-91cbfcb2cc5d)
+
+![Uploading image.png…]()
+
+Mobile View :
+
+![Uploading image.png…]()
+
+![Uploading image.png…]()
+
+![Uploading image.png…]()
+
