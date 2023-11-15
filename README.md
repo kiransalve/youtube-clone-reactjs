@@ -1,8 +1,8 @@
-# React + Vite
+Watchlist functionality added with Redux Toolkit
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![image](https://github.com/kiransalve/youtube-clone-reactjs/assets/90862340/6f6bb2bf-9add-4bd9-a0cb-bce8aaa6ef91)
 
-Currently, two official plugins are available:
+after click on add to watchlist 
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+![image](https://github.com/kiransalve/youtube-clone-reactjs/assets/90862340/6cf95e0e-c8d7-4532-a082-de123f0a30d1)
+
