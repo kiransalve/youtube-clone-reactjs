@@ -1,7 +1,7 @@
 import React from "react";
-import { Col, Container, Row } from "react-bootstrap";
 import Sidebar from "../components/Sidebar";
 import MovieList from "../components/MovieList";
+import Header from "../components/Header";
 
 const Homepage = () => {
   return (
