@@ -6,7 +6,7 @@ nav {
   background: #fff;
   position: sticky;
   top: 0;
-  z-index: 10;
+  z-index: 1100;
 }
 .logo_icon {
   color: red;
@@ -33,4 +33,17 @@ nav {
 }
 .search_box input::placeholder {
   font-size: 15px;
+}
+
+/* Mobile device media queries */
+@media (max-width: 900px) {
+  .menu_icon {
+    display: none;
+  }
+  .search_box input {
+    width: 100px;
+  }
+  .logo_icon {
+    font-size: 28px;
+  }
 }
